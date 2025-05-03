@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strait Coffee - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    /* Global box-sizing for consistent sizing */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Override main background to match page background */
+    main {
+      background-color: transparent;
+    }
+
+    /* Adjust section styles for three images */
+    section {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    /* Add beige border to images */
+    .featureimg {
+      width: 100%;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      border: 5px solid #D2B48C; /* Beige border */
+    }
+
+    .featureimg:hover {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Strait Coffee Logo" style="width: 50px;">
+    <h1>Strait Coffee</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <img src="menu_image1.jpg" alt="Menu Item 1" class="featureimg">
+    </section>
+    <section>
+      <img src="menu_image2.jpg" alt="Menu Item 2" class="featureimg">
+    </section>
+    <section>
+      <img src="menu_image3.jpg" alt="Menu Item 3" class="featureimg">
+    </section>
+  </main>
+  <footer>
+    <p style="text-align: center;">Created by Yin Maung</p>
+  </footer>
+</body>
+</html>
