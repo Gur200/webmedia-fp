@@ -40,8 +40,13 @@ section {
 
 .featureimg {
   width: 100%;
+  transition: filter 0.3s ease, transform 0.3s ease; /* Added transform to transition */
 }
 
+/* Add zoom and rotate on hover */
+.featureimg:hover {
+  transform: scale(1.1) rotate(5deg); /* Zoom (1.1x) and rotate (5 degrees) */
+}
 
 /* || Typography */
 
@@ -73,7 +78,6 @@ nav {
   background-color: #63B4C9;
 }
 
-
 ul {
   padding:0;
 }
@@ -99,7 +103,6 @@ a:visited{
 a:hover{
     color:#4C3639;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-}
 }
 
 a:active{
